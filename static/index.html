@@ -1,3 +1,13 @@
+<!-- 
+
+Potential input boxes, can't decide on if I want them or not.
+
+<input type="number" id="number-input" name="nyc"/>
+<input type="number" id="number-input" name="textile"/>
+ 
+
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,10 +20,13 @@
     <body>
         <div class="banner">
             <div class="logo"></div>
-            <div class="carbon-counter">
-                <h1>0.000 tn</h1>
+            <div class="carbon-header">
+                <h1 id="carbon-header">
+                    <span id="carbon-counter">0.0 tn</span>
+                </h1>
             </div>
         </div>
+        
         <div class="center-content">
             <h1>Taylor Swift's Private Jet</h1>
             <p>
@@ -26,17 +39,27 @@
                 while keeping an eye on the CO2 counter in the top right.
 
             </p>
-
-            <div class="carbon-choices">
-                <h2>Drive from New York to Los Angeles (~1.2 tons CO2)</h2>
-                <div class="carbon-images">
-                    <img src="/images/la_to_nyc_swift.png">
+            <form id="carbon-input">
+                <div class="carbon-choices">
+                    <h2>Drive from New York to Los Angeles (~1.2 tons CO2)</h2>
+                    <div class="carbon-images">
+                        <img src="/images/la_to_nyc_swift.png">
+                    </div>
+                    <div class="carbon-buttons">
+                        <button class="green-button" name="nyc">+</button>
+                        <button class="red-button" name="nyc">-</button>
+                    </div>
+                    <h2>Operate a small textile mill for a year (~1400 tons CO2)</h2>
+                    <div class="carbon-images">
+                        <img src="/images/la_to_nyc_swift.png">
+                    </div>
+                    <div class="carbon-buttons">
+                        <button class="green-button" name="textile">+</button>
+                        <button class="red-button" name="textile">-</button>
+                    </div>
                 </div>
-                <div class="carbon-buttons">
-                    <button class="green-button">+</button>
-                    <button class="red-button">-</button>
-                </div>
-            </div>
+            </form>
         </div>
+        <script src="carbonTracker.js" defer></script>
     </body>
 </html>
