@@ -50,27 +50,41 @@ body {
     width: 175px;
     height: 70px;
     border-radius: 15.5px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: clamp(32px, 2vw, 36px);
   }
   
   .carbon-header h1 {
-    font-size: 36px;
+    font-size: clamp(32px, 2vw, 36px);
     color: #ffffff;
-    margin-top: -5px;
-    padding: 20px;
+    margin: 0px;
+    padding: 0px;
   }
 
   .carbon-choices {
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   .carbon-choices h2 {
     font-size: 24px;
+    margin-bottom: 15px;
   }
 
   .carbon-images img {
     max-width: 100%;
+    margin-top: 15px;
+    height: auto;
   }
 
    .carbon-buttons {

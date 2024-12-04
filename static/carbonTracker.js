@@ -9,7 +9,11 @@ document.addEventListener("DOMContentLoaded", (event)=> {
 
     var carbonActivityDict = {
         "nyc": 1.2,
-        "textile": 1400
+        "textile": 1400,
+        "paperback-books": 10,
+        "iphone-13": 5,
+        "white-bread": 1100,
+        "leather-shoes": 150
     };
     var carbonCounter = 0;
     
