@@ -1,3 +1,7 @@
+//  Author: Cameron Pinchin
+// Purpose: Store data required for JS scripts. Handles button-click events.
+// Recently Updated Date: Feb 7, 2025
+
 // To display the summary once a user hits the given CO2
 // emission count.
 
